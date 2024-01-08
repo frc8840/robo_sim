@@ -1,0 +1,37 @@
+Author: Phil Aufdencamp
+
+Project Goals:
+1. Predict the state of the game through time, including but not limited to
+    1.1: the score of each alliance, attributed to each robot
+    1.2: the rough position of each robot  
+    1.3: Ranking Points
+    1.4: State of the end game elements
+    1.5: Phase of game: Autonomous vs TeleOp vs Endgame
+2. Figure out how the robot properties influence the state of the game resulting 
+in a sensitivity plot of how much each robot capability influences the state of the game.
+ 
+
+Project Architecture:
+I am going to be using an object oriented sim with a step wise, euler method based approach to 
+moving the model through time, which should be fine because there isn't any derivative effects
+
+I will be implementing the complexities of physics/robo capabilities in an order which balances the following 
+(Subjective) factors, trying to get the "High-High-Low" things first
+    - The expected impact on the results of the model
+    - The value of each decision on our robot design
+    - How hard it is to implement
+
+The prioritization of the complications / features which get added will also be dictated by 
+
+Physics / Robot Capabilities / Model complexities, in no paritcular order yet, I will later be prioritizing them 
+according to the prioritization scheme outlined above
+    - Accurate Time & Game Phase
+    - Zone Structure for the game field
+    - Robot Robot Picking up Notes
+    - Robt scoring Notes
+    - Robot reliability
+    - "Traffic"
+    - Ability to move under the stage vs needing to drive around it
+    - 1 Robot playing a game by itself
+    - 2 Robots playing each other
+    - 2 Teams of 3 Robots playing each other

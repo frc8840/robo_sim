@@ -35,3 +35,25 @@ according to the prioritization scheme outlined above
     - 1 Robot playing a game by itself
     - 2 Robots playing each other
     - 2 Teams of 3 Robots playing each other
+
+Start with an MVP, Definition:
+( ): Accurate game time
+( ): One Scoring Mechanism, kept accurately
+( ): Simple driver algo which moves from the human player station to the scoring station
+( ): 100% Scoring Accuracy (Robot scores every time)
+
+Ok so the structure of the simulation:
+    - Model the field as an undirected graph using the python networkx library
+
+Captain's Log
+IN PROGRESS:
+( ): Create the simplest possible version of the model: Call it TikTok
+    - field is 2 nodes with one link between them
+    - One Robot
+    - Real Match Length
+    - Driver just moves from one node to the next from one second to the next
+
+TO DO:
+( ): Add a weight to the graph which will represent distance from one node to the next 
+
+BACKLOG:
